@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// body{
+//     background-image: url(../../Midia/pernmabuco-img.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+
+// }
+
+.body2 {
+  background-image: url(../../Midia/img-bg-wave-blue.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  overflow-x: hidden;
+}
+
+// first
+nav {
+  .container3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 50px 3px 50px;
+    background-color: none;
+
+    .main-logo-one {
+      width: 220px;
+      height: auto;
+    }
+    .main-logo-two {
+      width: 95px;
+      margin-right: 15px;
+      height: auto;
+    }
+
+    .link-nav li {
+      display: flex;
+      color: $anchor-color;
+      list-style: none;
+      margin: 0;
+      padding-bottom: 0px;
+    }
+    .link-nav ul {
+      display: flex;
+      gap: 15px;
+    }
+
+    .link-nav a {
+      display: flex;
+      text-decoration: none;
+      font-family: "Play", sans-serif;
+      color: $anchor-color;
+      font-size: 20px;
+      position: relative;
+
+      &:hover {
+        // text-decoration: underline;
+        color: $link-color;
+      }
+      &::after {
+        content: " ";
+        width: 0%;
+        height: 2px;
+        background-color: $link-color;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.2s ease-out;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
+    hr {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .social-navigation {
+      gap: 05px;
+      padding-right: 05px;
+    }
+  }
+}
+
+// second part
+.container4 {
+  padding-top: 20px;
+  padding-bottom: 45px;
+
+  .first-paragraph {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 300;
+  }
+  .second-paragraph {
+    font-size: 18px;
+    font-weight: 300;
+    width: 450px;
+    text-align: left;
+  }
+}
+
+// third part
+.container5 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+  width: 60rem;
+  height: 90vh;
+  color: black;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  
+
+  .card {
+    width: 400px;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px $box-shadon-color;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 15px 15px 15px $box-shadon-color;
+  }
+}
+  .card-img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
+  .card-title{
+    font-size: 23px;
+  }
+
+  .dropdown {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+  }
+  
+}
+
+footer {
+  display: block;
+  background-color: none;
+  justify-content: center;
+  padding: 0px 0px 0px 0px;
+
+  .logo-footer {
+    margin-left: 25px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .footer-img {
+    width: 500px;
+    height: 500px;
+    max-width: 100%;
+    height: auto;
+  }
+  .links {
+    text-align: center;
+  }
+
+  .links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .links a:hover {
+    color: #007bff;
+  }
+
+  p {
+    margin-left: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: black;
+  }
+}
+
+@media (max-width: 1370px) {
+    
+  .container5 {
+    margin-top: 50px;
+    .card {
+      width: 300px;
+      height: 450px;
+      border-radius: 10px;
+    }
+    .card-text{
+      font-size: 77%;
+      width: 280px;
+      height: 65px;
+    }
+  }
+  .container3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px 5px 50px;
+    background-color: none;
+
+    .main-logo-img {
+      width: 220px;
+      height: auto;
+    }
+    .main-logo-two {
+      width: 90px;
+      margin-right: 50px;
+      height: auto;
+    }
+
+    .link-nav li {
+      display: flex;
+      color: $anchor-color;
+      list-style: none;
+      margin: 0;
+      padding-bottom: 0px;
+    }
+    .link-nav ul {
+      display: flex;
+      gap: 15px;
+    }
+
+    .link-nav a {
+      display: flex;
+      text-decoration: none;
+      font-family: "Play", sans-serif;
+      color: $anchor-color;
+      font-size: 16px;
+      position: relative;
+
+      &:hover {
+        // text-decoration: underline;
+        color: $link-color;
+      }
+      &::after {
+        content: " ";
+        width: 0%;
+        height: 2px;
+        background-color: $link-color;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s ease-out;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
+    hr {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  .container2 {
+    .boxes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px 20px 25px 20px;
+      filter: drop-shadow(0 0 0.4em $drop-shadon-color);
+      cursor: pointer;
+    }
+
+    .box-img {
+      text-align: center;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      width: 235px;
+      height: 225px;
+    }
+
+    .box {
+      width: 230px;
+      height: 230px;
+      margin: 10px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0px 0px 10px $box-shadon-color;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 2px 5px 10px $box-shadon-color;
+      }
+      .box:last-child {
+        margin-right: 0;
+      }
+
+      .box a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+        color: $black-color;
+        padding: 20px;
+        border-radius: 5px;
+      }
+    }
+    .paragraph-footer {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .container1 {
+    display: block;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    padding: 5px;
+
+    .link-nav {
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      width: 480px;
+      height: 50px;
+    }
+  }
+  .column {
+    color: white;
+    gap: 5px;
+
+    a {
+      color: white;
+    }
+  }
+
+  h3 {
+    color: white;
+  }
+}
